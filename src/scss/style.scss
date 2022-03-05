@@ -1,12 +1,18 @@
-@import "variables.scss";
+@import 'variables.scss';
 
 html {
   font-size: 62.5%;
 }
 
 #app {
+  padding: 1rem;
   color: #2c3e50;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+section {
+  padding: 2rem;
+  border: 1px solid black;
 }
 
 .test-button {
@@ -44,6 +50,30 @@ html {
     border-radius: 50%;
     background-color: $oc-indigo-6;
     transition: all 0.1s ease-in-out;
-  transition-property: fill, background;
+    transition-property: fill, background;
+  }
+}
+
+.test-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 20rem;
+  height: 3rem;
+  background-color: #e9e9e9;
+  svg {
+    min-width: 3rem;
+  }
+  .line {
+    height: 75%;
+    border-left: 0.1rem solid #afafaf;
+  }
+  input {
+    min-width: 85%;
+    min-width: 0;
+    height: 100%;
+    padding: 0.5rem;
+    outline: none;
+    background-color: transparent;
   }
 }
