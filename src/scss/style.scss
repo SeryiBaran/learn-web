@@ -12,7 +12,7 @@ html {
 
 section {
   padding: 2rem;
-  border: 1px solid black;
+  border: 0.1rem solid black;
 }
 
 .test-button {
@@ -75,5 +75,54 @@ section {
     padding: 0.5rem;
     outline: none;
     background-color: transparent;
+  }
+}
+
+.test-gallery {
+  .test-gallery-container {
+    display: flex;
+    display: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+    div {
+      width: 30rem;
+      height: 20rem;
+      background-color: #ff6161;
+    }
+  }
+}
+
+// Из интернета, но иконку сам вставил xD
+.test-button-super {
+  display: inline-block;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 0.7rem;
+  background: linear-gradient(#ecc92b, #fce25b);
+  box-shadow: 0 0 0 0.1rem #fce25b inset, -0.1rem 0 rgb(220, 195, 35),
+    -0.1rem 0.1rem rgb(192, 167, 7), -0.2rem 0.1rem rgb(219, 194, 34),
+    -0.2rem 0.2rem rgb(191, 166, 6), -0.3rem 0.2rem rgb(218, 193, 33),
+    -0.3rem 0.3rem rgb(190, 165, 5), -0.4rem 0.3rem rgb(217, 192, 32),
+    -0.4rem 0.4rem rgb(189, 164, 4), -0.5rem 0.4rem rgb(216, 191, 31),
+    -0.5rem 0.5rem rgb(188, 163, 3), -0.6rem 0.5rem rgb(215, 190, 30),
+    -0.6rem 0.6rem rgb(187, 162, 2), -0.7rem 0.6rem rgb(214, 189, 29),
+    -0.7rem 0.7rem rgb(186, 161, 1), -0.8rem 0.7rem rgb(213, 188, 28),
+    -0.8rem 0.8rem rgb(185, 160, 0), -0.7rem 0.9rem 0.1rem rgba(0, 0, 0, 0.4),
+    -0.5rem 1.1rem 0.1rem rgba(0, 0, 0, 0.2),
+    -0.1rem 1.3rem 0.4rem rgba(0, 0, 0, 0.2),
+    0.4rem 1.6rem 0.7rem rgba(0, 0, 0, 0.3);
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.4s;
+  &:active {
+    -webkit-transform: translate(-0.7rem, 0.8rem);
+    transform: translate(-0.7rem, 0.8rem);
+    box-shadow: none;
+  }
+  img {
+    margin-left: 1rem;
   }
 }

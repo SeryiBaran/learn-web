@@ -7,7 +7,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "brs": "browser-sync start --server \"dist\" --files \"**/*\"",
-    "format": "prettier --write ./**/*",
+    "format": "prettier --write ./src/**/*",
     "csssort": "postcss ./src/**/*.scss --replace --config package.json"
   },
   "devDependencies": {
