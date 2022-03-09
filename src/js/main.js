@@ -1,5 +1,6 @@
 // Импорты
 import '../scss/standard.scss';
+import '../scss/flickity.min.css';
 import '../scss/style.scss';
 
 // Счетчик времени
@@ -116,5 +117,5 @@ allTime = Date.now() - allTime;
 console.log(
   '%c%s',
   'color: green; font: 1.5rem Tahoma;',
-  `Время выполнения скрипта = ${allTime} миллисекунд`,
+  `Время выполнения этой части скрипта = ${allTime} миллисекунд`,
 );
