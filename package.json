@@ -10,7 +10,7 @@
     "format": "prettier --write ./src/**/*",
     "csssort": "postcss ./src/**/*.scss --replace --config package.json",
     "cssprefix": "postcss ./dist/**/*.css --use autoprefixer --config package.json",
-    "prod": "npm run csssort && npm run format && npm run build && npm run cssprefix"
+    "prod": "npm run csssort && npm run build && npm run cssprefix"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
@@ -31,5 +31,8 @@
         "order": "smacss"
       }
     }
+  },
+  "dependencies": {
+    "flickity": "^3.0.0"
   }
 }

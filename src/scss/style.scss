@@ -1,8 +1,8 @@
 @import 'variables.scss';
 
 html {
-  font-size: 62.5%;
   --swiper-navigation-size: 60px;
+  font-size: 62.5%;
 }
 
 #app {
@@ -132,38 +132,38 @@ section {
 }
 
 .gallery-cell {
-  min-width: 30rem;
   width: 66%;
+  min-width: 30rem;
   height: 300px;
   margin: 0 32px;
   img {
-    position: absolute;
     z-index: -9999;
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   a {
     display: block;
+    z-index: 9999;
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 9999;
   }
 }
 
 .gallery-cell-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 100%;
   padding: 32px;
   color: #fff;
   font-size: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   text-shadow: 0 0 0.5rem rgba(0, 0, 0, 1);
   h2 {
-    font-size: 150%;
     margin: 2rem 0;
+    font-size: 150%;
   }
 }
 
@@ -187,10 +187,10 @@ section {
 }
 
 .flickity-page-dots {
-  height: 3rem;
-  line-height: 2;
-  margin: 0 auto;
   bottom: 0;
+  height: 3rem;
+  margin: 0 auto;
+  line-height: 2;
 }
 
 @media (max-width: 780px) {

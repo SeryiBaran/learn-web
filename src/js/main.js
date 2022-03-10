@@ -1,7 +1,12 @@
 // Импорты
+import Flickity from 'flickity';
+import 'flickity/dist/flickity.min.css';
+
 import '../scss/standard.scss';
-import '../scss/flickity.min.css';
 import '../scss/style.scss';
+
+var flkty = new Flickity( '.gallery', {
+});
 
 // Счетчик времени
 let allTime = Date.now();
