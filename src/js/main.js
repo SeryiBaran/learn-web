@@ -5,7 +5,8 @@ import 'flickity/dist/flickity.min.css';
 import '../scss/standard.scss';
 import '../scss/style.scss';
 
-var flkty = new Flickity( '.gallery', {
+var flkty = new Flickity('.photos', {
+  cellAlign: 'center'
 });
 
 // Счетчик времени
