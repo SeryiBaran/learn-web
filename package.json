@@ -33,6 +33,7 @@
     }
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0",
     "flickity": "^3.0.0"
   }
 }

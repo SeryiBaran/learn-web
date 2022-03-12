@@ -126,68 +126,6 @@ section {
   }
 }
 
-
-
-
-
-/*
-***********************************************************************************
-* Ниже - слайдер
-***********************************************************************************
-*/
-
-
-
-
-
-.photos {
-  background-color: #555;
-}
-
-.flickity-prev-next-button {
-  width: 10rem;
-  height: 100%;
-  border: none;
-  border-radius: 0;
-  background-color: transparent;
-  filter: drop-shadow(0 0 4px #fff);
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-}
-
-.flickity-prev-next-button.next {
-  right: 0;
-}
-
-.flickity-prev-next-button.previous {
-  left: 0;
-}
-
-.flickity-page-dots {
-  bottom: 0;
-  height: 3rem;
-  margin: 0 auto;
-  line-height: 2;
-  filter: drop-shadow(0 0 4px #fff);
-}
-
-.photos {
-  width: 100%;
-  height: 100%;
-  max-height: 60vh;
-  margin-top: 30px;
-}
-
-.photos-slide {
-  display: block;
-  object-fit: contain;
-  color: #fff;
-  width: 66%;
-  min-width: 30rem;
-  margin: 0 32px 0 0;
-}
-
 @media (max-width: 780px) {
   .photos-slide {
     width: 100%;

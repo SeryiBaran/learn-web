@@ -1,13 +1,8 @@
 // Импорты
-import Flickity from 'flickity';
-import 'flickity/dist/flickity.min.css';
-
 import '../scss/standard.scss';
 import '../scss/style.scss';
 
-var flkty = new Flickity('.photos', {
-  cellAlign: 'center'
-});
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // Счетчик времени
 let allTime = Date.now();
