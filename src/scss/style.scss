@@ -1,9 +1,5 @@
 @import 'variables.scss';
 
-html {
-  font-size: 62.5%;
-}
-
 #app {
   padding: 1rem;
   color: #2c3e50;
@@ -78,22 +74,8 @@ section {
   }
 }
 
-.test-gallery {
-  .test-gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    div {
-      width: 30rem;
-      height: 20rem;
-      background-color: #ff6161;
-    }
-  }
-}
-
 // Из интернета, но иконку сам вставил xD
 .test-button-super {
-  display: inline-block;
   display: flex;
   position: relative;
   align-items: center;
@@ -126,17 +108,111 @@ section {
   }
 }
 
-@media (max-width: 780px) {
-  .photos-slide {
-    width: 100%;
-  }
-  .flickity-prev-next-button {
-    width: 6rem;
+.test_pseudoclasses {
+  ul {
+    font-size: 2rem;
+    li {
+      display: flex;
+      align-items: center;
+      line-height: 150%;
+      &:before {
+        -webkit-mask: no-repeat url('../img/checkmark.svg') 50% / contain;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        margin-right: 0.5em;
+        background-color: #80b7b3;
+        content: '';
+        mask: no-repeat url('../img/checkmark.svg') 50% / contain;
+      }
+      &:hover {
+        color: #d55a5a;
+        &:before {
+          background-color: #d55a5a;
+        }
+      }
+      &:nth-child(1) {
+        text-decoration: line-through;
+      }
+      &:nth-child(2) {
+        font-weight: bold;
+      }
+      &:nth-child(3) {
+        font-style: italic;
+      }
+      &:nth-child(4) {
+        text-transform: uppercase;
+      }
+    }
   }
 }
 
-@media (max-width: 500px) {
-  .flickity-prev-next-button {
-    display: none;
+.test_pseudoclasses2 {
+  button {
+    display: flex;
+    align-items: center;
+    padding: 1.5em 2.7em;
+    border-radius: 9999em;
+    background-color: #82b7b2;
+    box-shadow: 0 0.6rem 4rem 0 rgba(128, 183, 179, 0.54);
+    color: white;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+      background-color: #3a5856;
+    }
+    &:active {
+      background-color: #818181;
+      box-shadow: none;
+    }
+    img {
+      margin-left: 1em;
+    }
+  }
+}
+
+.test_pseudoclasses3 {
+  input {
+    padding: 0.7em;
+    border: 1px solid #b0b0b0;
+    &:focus {
+      border-color: #7fbed5;
+      box-shadow: 0 0 2rem -0.1rem rgba(127, 190, 213, 0.93);
+    }
+  }
+}
+
+.meme {
+  display: flex;
+  align-items: center;
+  .meme__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .quote {
+      position: relative;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border: 0.3rem solid #808080;
+      font-size: 120%;
+      &:after {
+        z-index: 1;
+        position: absolute;
+        bottom: -2rem;
+        left: 64%;
+        margin-left: -2rem;
+        border-width: 2rem 2rem 0;
+        border-style: solid;
+        border-color: #808080 transparent;
+        content: '';
+      }
+    }
+  }
+  & > * {
+    flex-shrink: 1;
+  }
+  img {
+    max-width: 100%;
   }
 }
