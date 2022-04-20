@@ -216,3 +216,27 @@ section {
     max-width: 100%;
   }
 }
+
+.test-input2 {
+  font-size: 2rem;
+  label {
+    display: inline-flex;
+    width: 100%;
+    max-width: 61.6rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    span {
+      padding: 2.6rem 2.2rem;
+      background-color: #7f8c8d;
+      color: #fff;
+    }
+    input {
+      flex: 1 1 auto;
+      padding: 0 2.2rem;
+      border: 0.1rem solid #bdc3c7;
+      border-left: none;
+      border-top-right-radius: inherit;
+      border-bottom-right-radius: inherit;
+    }
+  }
+}
