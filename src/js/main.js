@@ -1,4 +1,5 @@
 // Импорты
+import { SlideAnimations } from './jqueryAnimations.js';
 import '../scss/standard.scss';
 import '../scss/style.scss';
 
@@ -120,3 +121,58 @@ console.log(
   'color: green; font: 1.5rem Tahoma;',
   `Время выполнения этой части скрипта = ${allTime} миллисекунд`,
 );
+
+const newAlertButtons = document.querySelectorAll(
+  '.test-alert .new_alert_button',
+);
+let alertCloseAll;
+const alertContainer = document.querySelector('.alerts');
+
+function updateAlerts() {
+  alertCloseAll = document.querySelectorAll('.alerts .alert .alert_close');
+  alertCloseAll.forEach(elem => {
+    elem.onclick = () => {
+      document.querySelectorAll('.alerts .alert').forEach(elem => {
+        if (elem.style.display == 'none') {
+          elem.parentElement.removeChild(elem);
+        }
+      });
+      let elemParent = elem.parentElement;
+      SlideAnimations.slideToggle(elemParent);
+    };
+  });
+}
+
+function newAlert(message) {
+  alertContainer.innerHTML += `
+    <div class="alert">
+      <span class="alert_text">${message}</span>
+      <button class="alert_close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-x"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    `;
+  updateAlerts();
+}
+
+updateAlerts();
+
+newAlertButtons.forEach(elem => {
+  elem.onclick = () => {
+    newAlert('ЫЫЫ');
+  };
+});
