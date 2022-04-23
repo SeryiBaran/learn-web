@@ -278,3 +278,61 @@ section {
     }
   }
 }
+
+.gallery-test {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  .img_container {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    max-width: 50rem;
+    max-height: 40rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: #ccc;
+    box-shadow: 0 0 3rem 0.3rem #000;
+    .img_popup {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: inherit;
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: opacity 0.1s ease-in-out;
+      svg {
+        --webkit-filter: drop-shadow(0 0 0.3rem #fff);
+        color: #fff;
+        filter: drop-shadow(0 0 0.5rem #fff);
+        transition: inherit;
+      }
+    }
+    .img_popup,
+    .img_popup * {
+      opacity: 0;
+    }
+    img {
+      --webkit-filter: drop-shadow(0 0 0.3rem #000);
+      display: block;
+      object-fit: contain;
+      filter: drop-shadow(0 0 0.5rem #000);
+      transition: transform 0.1s ease-in-out;
+    }
+    &:hover {
+      position: relative;
+      img {
+        transform: scale(1.1);
+      }
+      .img_popup,
+      .img_popup * {
+        opacity: 1;
+      }
+    }
+  }
+}
