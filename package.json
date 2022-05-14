@@ -9,7 +9,7 @@
     "brs": "browser-sync start --server \"dist\" --files \"**/*\"",
     "format": "prettier --write ./src/**/*",
     "csssort": "postcss ./src/**/*.scss --replace --config package.json",
-    "cssprefix": "postcss ./dist/**/*.css --use autoprefixer --config package.json",
+    "cssprefix": "postcss ./dist/**/*.css --replace --use autoprefixer --config package.json",
     "prod": "npm run csssort && npm run build && npm run cssprefix"
   },
   "devDependencies": {

@@ -336,3 +336,10 @@ section {
     }
   }
 }
+
+.example {
+  display: grid;
+  background: linear-gradient(to bottom, white, black);
+  transition: all 0.5s;
+  user-select: none;
+}
