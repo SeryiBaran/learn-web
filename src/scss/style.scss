@@ -337,9 +337,57 @@ section {
   }
 }
 
-.example {
-  display: grid;
-  background: linear-gradient(to bottom, white, black);
-  transition: all 0.5s;
-  user-select: none;
+.calc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40rem;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: #ddd;
+  input {
+    width: 100%;
+    padding: 1rem;
+  }
+  .inputs {
+    display: flex;
+    gap: 1rem;
+  }
+  input[type='radio'] {
+    display: none;
+    visibility: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    user-select: none;
+    &:checked + span {
+      background-color: rgb(150, 150, 150);
+    }
+  }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    #asd {
+      display: flex;
+      gap: 1rem;
+    }
+    .button {
+      display: block;
+      padding: 3rem;
+      border: 1px solid #333;
+      background-color: #fff;
+      &:hover {
+        background-color: rgb(200, 200, 200);
+      }
+      &:active {
+        background-color: rgb(150, 150, 150);
+      }
+    }
+  }
+  .warn {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid red;
+    color: red;
+  }
 }

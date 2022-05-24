@@ -176,3 +176,41 @@ newAlertButtons.forEach(elem => {
     newAlert('ЫЫЫ');
   };
 });
+
+const calc = document.querySelector('.calc');
+const calcForm = document.querySelector('.calc #asd');
+const calcInfo = document.createElement('span');
+calcInfo.className = 'warn';
+const calcResult = document.querySelector('.calc .result');
+const [calcInput1, calcInput2] = document.querySelectorAll(
+  '.calc .inputs input',
+);
+const getResultButton = document.querySelector(
+  '.calc .buttons .button.get_result',
+);
+
+const setResult = num => {
+  calcResult.value = num;
+};
+
+const operations = {
+  '+': (a, b) => a + b,
+  '-': (a, b) => a - b,
+  '/': (a, b) => a / b,
+  '*': (a, b) => a * b,
+};
+
+getResultButton.onclick = () => {
+  if (!calcForm.operation.value) {
+    calc.appendChild(calcInfo);
+    calcInfo.innerText = 'Вы не выбрали операцию!';
+  } else {
+    document.querySelector('.calc .warn') && calc.removeChild(calcInfo);
+    setResult(
+      operations[calcForm.operation.value](
+        parseFloat(calcInput1.value),
+        parseFloat(calcInput2.value),
+      ),
+    );
+  }
+};
