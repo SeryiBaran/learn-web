@@ -1,3 +1,5 @@
+'use strict';
+
 export const SlideAnimations = {
     slideUp: function (element, duration = 500) {
         return new Promise(function (resolve, reject) {

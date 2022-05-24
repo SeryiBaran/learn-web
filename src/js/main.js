@@ -1,3 +1,5 @@
+'use strict';
+
 // Импорты
 import { SlideAnimations } from './jqueryAnimations.js';
 import '../scss/standard.scss';
