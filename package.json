@@ -10,7 +10,8 @@
     "format": "prettier --write ./src/**/*",
     "csssort": "postcss ./src/**/*.scss --replace --config package.json --no-map",
     "cssprefix": "postcss ./dist/**/*.css --replace --use autoprefixer --config package.json --no-map",
-    "prod": "npm run csssort && npm run build && npm run cssprefix"
+    "prod": "npm run csssort && npm run build && npm run cssprefix",
+    "p:d": "npm run prod && git add . && git commit -m \"Prod and Deploy\" && git push && git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
