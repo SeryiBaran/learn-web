@@ -2,7 +2,7 @@
 
 // Импорты
 import { SlideAnimations } from './jqueryAnimations.js';
-import '../scss/standard.scss';
+import '../sb.min.css';
 import '../scss/style.scss';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';

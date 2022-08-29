@@ -391,3 +391,21 @@ section {
     color: red;
   }
 }
+
+.figma-button {
+  padding: 1rem;
+  background-color: #d61818;
+  color: #fff;
+  min-width: 16rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  &:hover {
+    background-color: #f82c2c;
+  }
+  &:active {
+    background-color: #9e1818;
+  }
+  &[disabled] {
+    background-color: #a4a4a4;
+  }
+}
