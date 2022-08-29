@@ -1,0 +1,362 @@
+/*! sb.css | MIT License | https://github.com/SeryiBaran/sb.css */
+/*! Based on normalize.css | https://github.com/necolas/normalize.css */
+
+@import 'vars';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  word-break: normal;
+}
+
+html,
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  line-height: 1;
+}
+
+html {
+  text-size-adjust: 100%;
+  background-color: #fff;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-size: inherit;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+  color: unset;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-size: 1em;
+  font-family: monospace, monospace;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-size: 1em;
+  font-family: monospace, monospace;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  line-height: 1.15;
+  font-family: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  appearance: button;
+}
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type='search'] {
+  appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type='search']::-webkit-search-decoration {
+  appearance: none;
+}
+
+::-webkit-file-upload-button {
+  appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+/*
+  * Optional styles
+  */
+
+/*
+  * If you need 1rem = Xpx
+  */
+html.optional-rem {
+  font-size: $rem-size;
+}
+
+html.optional-rem body {
+  font-size: 1.4rem;
+}
+
+/*
+  * Clear outline
+  */
+*[contenteditable] {
+  outline: 0;
+}
+
+a,
+input,
+button,
+select,
+textarea {
+  outline: 0;
+}
+
+/*
+  * Clear outline from libraries
+  */
+.clear-outline-from-libs {
+  a,
+  input,
+  button,
+  .btn {
+    &.active.focus,
+    &.active:focus,
+    &.focus,
+    &:active.focus,
+    &:active:focus,
+    &:focus {
+      outline: 0 !important;
+      outline-color: transparent !important;
+      outline-style: none !important;
+      outline-width: 0 !important;
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+    }
+  }
+}
+
+/*
+  * Reset all styles for tables
+  */
+.clear-tables {
+  table,
+  thead,
+  tbody,
+  tfoot,
+  tr,
+  th,
+  td {
+    -webkit-border-horizontal-spacing: 0;
+    -webkit-border-vertical-spacing: 0;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-color: inherit;
+    border-collapse: inherit;
+    border-spacing: 0;
+    font-weight: inherit;
+    text-align: left;
+    vertical-align: inherit;
+  }
+}
+
+/*
+  * Useful styles
+  */
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+
+.pseudo_body,
+.wrapper {
+  min-height: 100vh;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}
+
+.shadow {
+  transition: 0.2s;
+  transition-property: box-shadow, transform;
+}
+
+.shadow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
