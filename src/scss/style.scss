@@ -10,6 +10,12 @@ section {
   border: 0.1rem solid black;
 }
 
+.hidden {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
 .test-button {
   display: flex;
   align-items: center;
@@ -336,75 +342,131 @@ section {
   }
 }
 
-.calc {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 40rem;
-  padding: 1rem;
-  gap: 1rem;
-  background-color: #ddd;
-  input {
-    width: 100%;
+.govno-calc {
+  .calc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40rem;
     padding: 1rem;
-  }
-  .inputs {
-    display: flex;
     gap: 1rem;
-  }
-  input[type='radio'] {
-    display: none;
-    visibility: none;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    user-select: none;
-    &:checked + span {
-      background-color: rgb(150, 150, 150);
+    background-color: #ddd;
+    input {
+      width: 100%;
+      padding: 1rem;
     }
-  }
-  .buttons {
-    display: flex;
-    gap: 1rem;
-    #asd {
+    .inputs {
       display: flex;
       gap: 1rem;
     }
-    .button {
-      display: block;
-      padding: 3rem;
-      border: 1px solid #333;
-      background-color: #fff;
-      &:hover {
-        background-color: rgb(200, 200, 200);
-      }
-      &:active {
+    input[type='radio'] {
+      display: none;
+      visibility: none;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      user-select: none;
+      &:checked + span {
         background-color: rgb(150, 150, 150);
       }
     }
-  }
-  .warn {
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid red;
-    color: red;
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      #asd {
+        display: flex;
+        gap: 1rem;
+      }
+      .button {
+        display: block;
+        padding: 3rem;
+        border: 1px solid #333;
+        background-color: #fff;
+        &:hover {
+          background-color: rgb(200, 200, 200);
+        }
+        &:active {
+          background-color: rgb(150, 150, 150);
+        }
+      }
+    }
+    .warn {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid red;
+      color: red;
+    }
   }
 }
 
-.figma-button {
-  padding: 1rem;
-  background-color: #d61818;
-  color: #fff;
-  min-width: 16rem;
-  border-radius: 1rem;
-  font-size: 2rem;
-  &:hover {
-    background-color: #f82c2c;
+.figma-button-test {
+  .figma-button {
+    padding: 1rem;
+    background-color: #d61818;
+    color: #fff;
+    min-width: 16rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    &:hover {
+      background-color: #f82c2c;
+    }
+    &:active {
+      background-color: #9e1818;
+    }
+    &[disabled] {
+      background-color: #a4a4a4;
+    }
   }
-  &:active {
-    background-color: #9e1818;
+}
+
+.header {
+  header {
+    min-height: 6rem;
+    background-color: #e3e3e3;
+    display: flex;
+    flex-wrap: wrap;
   }
-  &[disabled] {
-    background-color: #a4a4a4;
+  header .header__content {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    padding: 0 1rem;
+  }
+  header a {
+    color: inherit;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    font-size: 200%;
+  }
+  header ul {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header ul a {
+    height: 100%;
+    padding: 0 1rem;
+    transition: background 0.1s ease-in-out;
+  }
+  header ul a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.grid-test {
+  .container {
+    border: 1px solid red;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .child {
+    height: 30rem;
+    background-color: #ccc;
   }
 }
