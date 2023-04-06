@@ -12,7 +12,6 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
-    "postcss-nesting": "^11.2.2",
     "postcss-preset-env": "^8.3.0",
     "prettier": "^2.8.7",
     "taze": "^0.9.1",
@@ -23,12 +22,10 @@
     "plugins": {
       "autoprefixer": {},
       "postcss-preset-env": {
-        "stage": 3,
         "features": {
           "nesting-rules": true
         }
-      },
-      "postcss-nesting": {}
+      }
     }
   },
   "dependencies": {
