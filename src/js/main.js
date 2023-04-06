@@ -1,7 +1,7 @@
 // Импорты
 import { SlideAnimations } from './jqueryAnimations.js';
 import 'gardevoir';
-import '../css/style.css';
+import '../css/style.pcss';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
