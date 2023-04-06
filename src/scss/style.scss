@@ -1,5 +1,26 @@
 @import 'variables.scss';
 
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-size: 1.4rem;
+}
+
+* {
+  border: none;
+  margin: 0;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
 #app {
   padding: 1rem;
   color: #2c3e50;

@@ -1,9 +1,7 @@
-'use strict';
-
 // Импорты
 import { SlideAnimations } from './jqueryAnimations.js';
+import 'gardevoir';
 import '../scss/style.scss';
-import '../sb.min.css';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
