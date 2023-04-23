@@ -8,30 +8,205 @@
   </head>
   <body>
     <div id="app">
-      <!-- <div class="hidden"> -->
-      <section>
-        <button class="test-button">
+      <button id="hideAll">Спрятать все</button>
+      <div id="wrapperForHiding">
+        <section>
+          <button class="test-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-double-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+            Кликни!
+          </button>
+        </section>
+        <section>
+          <label class="test-input"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+            <span class="line"></span><input type="text" placeholder="Поиск"
+          /></label>
+        </section>
+        <section>
+          <button class="test-button-super">
+            <span>Кликни!</span><img src="./src/img/chevron-double-right.svg" />
+          </button>
+        </section>
+        <section>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="160"
+            height="160"
             fill="currentColor"
-            class="bi bi-chevron-double-right"
+            class="bi bi-balloon-fill"
             viewBox="0 0 16 16"
           >
             <path
               fill-rule="evenodd"
-              d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
-            />
-            <path
-              fill-rule="evenodd"
-              d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+              d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.244-.487ZM4.352 3.356a4.004 4.004 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5c0 .276-.226.496-.498.542-.95.162-1.749.78-2.173 1.617a.595.595 0 0 1-.52.341c-.346 0-.599-.329-.457-.644Z"
             />
           </svg>
-          Кликни!
-        </button>
-      </section>
-      <section>
+        </section>
+        <section class="test_pseudoclasses">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet.</li>
+            <li>Hic unde accusamus veniam quis.</li>
+            <li>Sequi unde laudantium saepe similique!</li>
+            <li>Animi fugit excepturi placeat similique!</li>
+          </ul>
+        </section>
+        <section class="test_pseudoclasses2">
+          <button>Full Story <img src="./src/img/arrow-left.png" /></button>
+        </section>
+        <section class="test_pseudoclasses3">
+          <input type="text" />
+        </section>
+        <section class="meme">
+          <div class="meme__left"><img src="./src/img/screen.png" /></div>
+          <div class="meme__right">
+            <div class="quote">Сфоткай, типа сделяль</div>
+            <img src="./src/img/man.png" />
+          </div>
+        </section>
+        <section class="test-input2">
+          <label><span>Your Name</span><input type="text" /></label>
+        </section>
+        <section>
+          <button class="test-button3">BLUE</button>
+        </section>
+        <section class="gallery-test">
+          <div class="img_container">
+            <img
+              src="https://cdn.fishki.net/upload/post/2019/10/11/3111024/internet-20191011-093848-1.jpg"
+            />
+            <a
+              class="img_popup"
+              href="https://cdn.fishki.net/upload/post/2019/10/11/3111024/internet-20191011-093848-1.jpg"
+              target="_blank"
+            >
+              <svg
+                width="60"
+                height="60"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <use href="./src/img/feather-sprite.svg#eye" />
+              </svg>
+            </a>
+          </div>
+          <div class="img_container">
+            <img
+              src="https://media.vlpt.us/images/younoah/post/ffff293e-4140-416d-83c1-fd29b7518575/typeScript.png?w=768"
+            />
+            <a
+              class="img_popup"
+              href="https://media.vlpt.us/images/younoah/post/ffff293e-4140-416d-83c1-fd29b7518575/typeScript.png?w=768"
+              target="_blank"
+            >
+              <svg
+                width="60"
+                height="60"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <use href="./src/img/feather-sprite.svg#eye" />
+              </svg>
+            </a>
+          </div>
+          <div class="img_container">
+            <img
+              src="https://chudo-prirody.com/uploads/posts/2021-08/1628773536_6-p-foto-kotov-na-telefon-7.jpg"
+            />
+            <a
+              class="img_popup"
+              href="https://chudo-prirody.com/uploads/posts/2021-08/1628773536_6-p-foto-kotov-na-telefon-7.jpg"
+              target="_blank"
+            >
+              <svg
+                width="60"
+                height="60"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <use href="./src/img/feather-sprite.svg#eye" />
+              </svg>
+            </a>
+          </div>
+        </section>
+        <section class="figma-button-test">
+          <button class="figma-button">Тест</button>
+          <button class="figma-button" disabled>Тест</button>
+        </section>
+        <section class="header">
+          <header>
+            <div class="header__content">
+              <a href="#" class="logo">Лого</a>
+            </div>
+            <ul>
+              <li><a href="#">Кнопка</a></li>
+              <li><a href="#">Кнопка</a></li>
+              <li><a href="#">Кнопка</a></li>
+            </ul>
+          </header>
+        </section>
+        <section class="grid-test">
+          <div class="container">
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+          </div>
+        </section>
+      </div>
+      <!-- <iconify-icon icon="mdi:copyright" class="icon"></iconify-icon> -->
+      <section id="users">
         <label class="test-input"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
@@ -45,165 +220,11 @@
               d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
             />
           </svg>
-          <span class="line"></span><input type="text" placeholder="Поиск"
+          <span class="line"></span
+          ><input type="text" placeholder="Поиск" id="usersSearchInput"
         /></label>
+        <div id="usersCardsContainer"><h2>Загрузка...</h2></div>
       </section>
-      <section>
-        <button class="test-button-super">
-          <span>Кликни!</span><img src="./src/img/chevron-double-right.svg" />
-        </button>
-      </section>
-      <section>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="160"
-          height="160"
-          fill="currentColor"
-          class="bi bi-balloon-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.244-.487ZM4.352 3.356a4.004 4.004 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5c0 .276-.226.496-.498.542-.95.162-1.749.78-2.173 1.617a.595.595 0 0 1-.52.341c-.346 0-.599-.329-.457-.644Z"
-          />
-        </svg>
-      </section>
-      <section class="test_pseudoclasses">
-        <ul>
-          <li>Lorem ipsum dolor, sit amet.</li>
-          <li>Hic unde accusamus veniam quis.</li>
-          <li>Sequi unde laudantium saepe similique!</li>
-          <li>Animi fugit excepturi placeat similique!</li>
-        </ul>
-      </section>
-      <section class="test_pseudoclasses2">
-        <button>Full Story <img src="./src/img/arrow-left.png" /></button>
-      </section>
-      <section class="test_pseudoclasses3">
-        <input type="text" />
-      </section>
-      <section class="meme">
-        <div class="meme__left"><img src="./src/img/screen.png" /></div>
-        <div class="meme__right">
-          <div class="quote">Сфоткай, типа сделяль</div>
-          <img src="./src/img/man.png" />
-        </div>
-      </section>
-      <section class="test-input2">
-        <label><span>Your Name</span><input type="text" /></label>
-      </section>
-      <section>
-        <button class="test-button3">BLUE</button>
-      </section>
-      <section class="gallery-test">
-        <div class="img_container">
-          <img
-            src="https://cdn.fishki.net/upload/post/2019/10/11/3111024/internet-20191011-093848-1.jpg"
-          />
-          <a
-            class="img_popup"
-            href="https://cdn.fishki.net/upload/post/2019/10/11/3111024/internet-20191011-093848-1.jpg"
-            target="_blank"
-          >
-            <svg
-              width="60"
-              height="60"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <use href="./src/img/feather-sprite.svg#eye" />
-            </svg>
-          </a>
-        </div>
-        <div class="img_container">
-          <img
-            src="https://media.vlpt.us/images/younoah/post/ffff293e-4140-416d-83c1-fd29b7518575/typeScript.png?w=768"
-          />
-          <a
-            class="img_popup"
-            href="https://media.vlpt.us/images/younoah/post/ffff293e-4140-416d-83c1-fd29b7518575/typeScript.png?w=768"
-            target="_blank"
-          >
-            <svg
-              width="60"
-              height="60"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <use href="./src/img/feather-sprite.svg#eye" />
-            </svg>
-          </a>
-        </div>
-        <div class="img_container">
-          <img
-            src="https://chudo-prirody.com/uploads/posts/2021-08/1628773536_6-p-foto-kotov-na-telefon-7.jpg"
-          />
-          <a
-            class="img_popup"
-            href="https://chudo-prirody.com/uploads/posts/2021-08/1628773536_6-p-foto-kotov-na-telefon-7.jpg"
-            target="_blank"
-          >
-            <svg
-              width="60"
-              height="60"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <use href="./src/img/feather-sprite.svg#eye" />
-            </svg>
-          </a>
-        </div>
-      </section>
-      <section class="figma-button-test">
-        <button class="figma-button">Тест</button>
-        <button class="figma-button" disabled>Тест</button>
-      </section>
-      <section class="header">
-        <header>
-          <div class="header__content">
-            <a href="#" class="logo">Лого</a>
-          </div>
-          <ul>
-            <li><a href="#">Кнопка</a></li>
-            <li><a href="#">Кнопка</a></li>
-            <li><a href="#">Кнопка</a></li>
-          </ul>
-        </header>
-      </section>
-      <section class="grid-test">
-        <div class="container">
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-          <div class="child"></div>
-        </div>
-      </section>
-      <!-- </div> -->
     </div>
     <script type="module" src="./src/main.ts"></script>
   </body>
