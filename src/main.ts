@@ -131,3 +131,24 @@ function assert(condition: any, msg?: string): asserts condition {
 
   renderUsersCards(users)
 })()
+
+console.log(
+  '%c' + 'Error',
+  `padding: 4px 8px;
+      color: white;
+      background-color: red`
+)
+
+console.log(
+  '%c' + 'Warning',
+  `padding: 4px 8px;
+      color: white;
+      background-color: orange`
+)
+
+console.log(
+  '%c' + 'Success',
+  `padding: 4px 8px;
+      color: white;
+      background-color: green`
+)
