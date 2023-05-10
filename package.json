@@ -11,6 +11,8 @@
     "@antfu/eslint-config": "^0.38.5",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "postcss-preset-env": "^8.3.0",
